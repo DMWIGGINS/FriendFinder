@@ -1,0 +1,30 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "application that allows user to answer a series of questions and be matched with another user whose answers are the most compatible",
+  "main": "server.js",
+  "scripts": {
+    "test": "na",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DMWIGGINS/FriendFinder.git"
+  },
+  "keywords": [
+    "friend",
+    "find",
+    "questions"
+  ],
+  "author": "Doreen Wiggins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DMWIGGINS/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/DMWIGGINS/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "path": "^0.12.7"
+  }
+}

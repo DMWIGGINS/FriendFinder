@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>Survey Questions</h2>
+            <hr>
+            <h3>
+                <b>
+                    About You</b>
+            </h3>
+
+            <div class="form-group">
+                <p1>Name (Required)</p1>
+                <input type="text" class="form-control" id="name">
+            </div>
+
+            <div class="form-group">
+                <p1>Link to Photo Image (Required)</p1>
+                <input type="text" class="form-control" id="photo">
+            </div>
+            <hr>
+
+
+            <!-- <div class="form-group"> -->
+            <label for="sel1">
+                <h3>
+                    <b>Question 1</b>
+                </h3>
+            </label>
+            <br>
+            <p1>You lead a very active lifestyle.</p1>
+            <br>
+            <!-- <select class="form-control" id="sel1" name="answer-one"> 
+                    <input type="text" placeholder="Select an Option">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                    </select>
+                    </div> -->
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="true">Select an Option
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li>
+                        5 (Strongly Agree)
+                    </li>
+                    <li>
+                        4
+                    </li>
+
+                    <li>
+                        3
+                    </li>
+                    <li>
+                        2
+                    </li>
+                    <li>
+                        1 (Strongly Disagree)
+                    </li>
+                </ul>
+            </div>
+            <div class="form-group">
+                <label for="sel1">
+                    <h3>
+                        <b>Question 2</b>
+                    </h3>
+                </label>
+                <br>
+                <p1>You enjoy watching your favorite sports team on television.</p1>
+                <br>
+
+                <select class="form-control" id="sel1" name="answer-one">
+                    <!-- <input type="text" placeholder="Select an Option"> -->
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sel1">
+                    <h3>
+                        <b>Question 3</b>
+                    </h3>
+                </label>
+                <br>
+                <p1>You enjoy going to the movie theater even though netflix is cheaper.</p1>
+                <br>
+                <select class="form-control" id="sel1" name="answer-one">
+                    <!-- <input type="text" placeholder="Select an Option"> -->
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sel1">
+                    <h3>
+                        <b>Question 4</b>
+                    </h3>
+                </label>
+                <br>
+                <p1>When you hear music you can't help but dance.</p1>
+                <br>
+                <select class="form-control" id="sel1" name="answer-one">
+                    <!-- <input type="text" placeholder="Select an Option"> -->
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sel1">
+                    <h3>
+                        <b>Question 5</b>
+                    </h3>
+                </label>
+                <br>
+                <p1>You have done things that would be considered adventurous.</p1>
+                <br>
+                <select class="form-control" id="sel1" name="answer-one">
+                    <!-- <input type="text" placeholder="Select an Option"> -->
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sel1">
+                    <h3>
+                        <b>Question 6</b>
+                    </h3>
+                </label>
+                <br>
+                <p1>You enjoy spending an evening playing games and hanging with friends.</p1>
+                <br>
+                <select class="form-control" id="sel1" name="answer-one">
+                    <!-- <input type="text" placeholder="Select an Option"> -->
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sel1">
+                    <h3>
+                        <b>Question 7</b>
+                    </h3>
+                </label>
+                <br>
+                <p1>You sometimes find yourself pondering the meaning of it all.</p1>
+                <br>
+                <select class="form-control" id="sel1" name="answer-one">
+                    <!-- <input type="text" placeholder="Select an Option"> -->
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sel1">
+                    <h3>
+                        <b>Question 8</b>
+                    </h3>
+                </label>
+                <br>
+                <p1>You love animals, especially your pets.</p1>
+                <br>
+                <select class="form-control" id="sel1" name="answer-one">
+                    <!-- <input type="text" placeholder="Select an Option"> -->
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sel1">
+                    <h3>
+                        <b>Question 9</b>
+                    </h3>
+                </label>
+                <br>
+                <p1>You sometimes spend hours reading books.</p1>
+                <br>
+                <select class="form-control" id="sel1" name="answer-one">
+                    <!-- <input type="text" placeholder="Select an Option"> -->
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sel1">
+                    <h3>
+                        <b>Question 10</b>
+                    </h3>
+                </label>
+                <br>
+                <p1>You are a very laid back person.</p1>
+                <br>
+                <select class="form-control" id="sel1" name="answer-one">
+                    <!-- <input type="text" placeholder="Select an Option"> -->
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary btn-block btn-lg">
+                <span class="glyphicon glyphicon-ok-sign"></span> Submit</button>
+            <hr>
+
+            <p>
+
+                <a href="/api/friendslist">API Friends List</a>
+                |
+                <a href="#">GitHub Repo</a>
+            </p>
+            <!-- </div> -->
+        </div>
+    </div>
+
+</body>
+
+</html>

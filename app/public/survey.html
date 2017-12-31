@@ -14,6 +14,34 @@
 </head>
 
 <body>
+
+
+
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="false">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Meet your new bestie!</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="newFriendName"></div>
+                    <div id="newFriendImage"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
     <div class="container">
         <div class="row">
             <h2>Survey Questions</h2>
@@ -266,9 +294,16 @@
 
         $.post("/api/friends", newFriends,
             function (data) {
-                console.log(data);
+                console.log(data.name);
+                console.log(data.photo);
                 if (data) {
-                    alert("Yay! We will find you a match.");
+
+                    $("#newFriendName").append(data.name);
+                    var friendPhoto = $("<img>")
+                    $(friendPhoto).attr("src", data.photo);
+                    $("#newFriendImage").append(friendPhoto);
+                    $('#myModal').modal("show");
+
                 } else {
                     alert("Sorry you have no match.....try again.");
                 }

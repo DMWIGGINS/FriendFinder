@@ -232,7 +232,7 @@
 
                 <a href="/api/friends">API Friends List</a>
                 |
-                <a href="#">GitHub Repo</a>
+                <a href="https://github.com/DMWIGGINS/FriendFinder">GitHub Repo</a>
             </p>
 
         </div>
@@ -240,35 +240,39 @@
 
 </body>
 
-</html>
+<!-- </html> -->
 
 <script type="text/javascript">
     $("#submit").on("click", function (event) {
         event.preventDefault();
         alert("clicked");
-        // Here we grab the form elements
+
+        var scoreArray = [];
+        for (i = 1; i < 11; i++) {
+            var collectScores = $("#sel" + i).val().trim();
+            scoreArray.push(collectScores);
+        };
+        var scoreString = scoreArray.toString();
 
         var newFriends = {
             name: $("#name").val().trim(),
             photo: $("#photo").val().trim(),
-            scores: []
+            scores: scoreString
         };
-        for (i = 1; i < 11; i++) {
-            var newScore = $("#sel" + i).val().trim();
-            newFriends.scores.push(newScore);
-        }
-        console.log(newFriends);
-    });
 
-    $.post("/api/friendslist", newFriends,
-        function (data) {
-            // If a table is available... tell user they are booked.
-            if (data) {
-                alert("Yay! We will find you a match.");
-            }
-            // If a table is available... tell user they on the waiting list.
-            else {
-                alert("Sorry you have no match.....try again.");
-            }
-        });
+        console.log(newFriends.scores);
+        console.log(newFriends);
+
+
+        $.post("/api/friends", newFriends,
+            function (data) {
+                console.log(data);
+                if (data) {
+                    alert("Yay! We will find you a match.");
+                } else {
+                    alert("Sorry you have no match.....try again.");
+                }
+            });
+
+    });
 </script>

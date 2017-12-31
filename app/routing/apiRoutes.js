@@ -23,22 +23,46 @@ module.exports = function (app) {
     // Then the server saves the data to the tableData array)
     // ---------------------------------------------------------------------------
     app.post("/api/friends", function (req, res) {
-        // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-        // It will do this by sending out the value "true" have a table
+        // console.log(friends[0].scores);
+        // console.log((friends[0].scores).toString());
         // req.body is available since we're using the body-parser middleware
+        // console.log(req.body.scores);
+        // console.log((req.body.scores).toString());
+        workingScores = [];
+        var workingScores = req.body.scores.split(",");
+        // console.log(workingScores);
+        // console.log(friends[0].scores.length);
+
         var bestMatch = [];
         for (x = 0; x < friends.length; x++) {
+
+            // var tempString = (friends[x].scores).toString();
+            // console.log(tempString);
             var total = 0;
-            for (i = 0; i < scores.length; i++) {
-                total = total + Math.abs(parseInt(newFriends.scores[i]) - parseInt(friends[x].scores[i]));
+            for (i = 0; i < 10; i++) {
+                console.log(total);
+                // console.log(x + " index " + i + " is " + parseInt(friends[x].scores[i]));
+                // console.log(parseInt(workingScores[i]));
+                // console.log(i + " is " + parseInt(req.body.scores[i]));
+                // console.log(Math.abs(parseInt(req.body.scores[i])));
+                // console.log(Math.abs(parseInt(friends[x].scores[i])));
+                total = total + Math.abs(parseInt(workingScores[i]) - parseInt(friends[x].scores[i]));
             }
+            console.log("------------------------------------------------------------");
+            console.log(total);
             bestMatch.push(total);
-        }
-        var bestScore = Math.min(bestMatch);
 
-        pickMe = bestMatch.indexOf(bestScore);
+        };
+        console.log(bestMatch);
 
-        res.json(friends[pickMe]);
-        console.log(res.json(friends[pickMe]));
+        var bestScore = Math.min(...bestMatch);
+        console.log(bestScore);
+        var pickMe = bestMatch.indexOf(bestScore);
+        console.log(pickMe);
+        var bestFriend = friends[pickMe];
+
+        res.json(bestFriend);
+        console.log(bestFriend);
+        friends.push(req.body);
     });
 };

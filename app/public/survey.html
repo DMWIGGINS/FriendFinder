@@ -8,16 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- add additional styling from style.css file -->
     <link rel="stylesheet" href="../../assets/style.css">
-
-
 </head>
 
 <body>
 
-
-
-
+    <!-- modal box to pop up with survey match results- is hidden initially-->
     <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -33,15 +30,12 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
                 </div>
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
     </div>
-    <!-- /.modal -->
 
+    <!-- Top section of survey page with form for name and link to user photo-->
     <div class="container">
         <div class="row">
             <h2>Survey Questions</h2>
@@ -50,20 +44,17 @@
                 <b>
                     About You</b>
             </h3>
-
             <div class="form-group">
                 <p1>Name (Required)</p1>
                 <input type="text" class="form-control" id="name">
             </div>
-
             <div class="form-group">
                 <p1>Link to Photo Image (Required)</p1>
                 <input type="text" class="form-control" id="photo">
             </div>
             <hr>
 
-
-
+            <!-- survey questions with drop down selection from 1 to 5 -->
             <div class="form-group">
                 <label for="question_one">
                     <h3>
@@ -74,7 +65,6 @@
                 <p1>You lead a very active lifestyle.</p1>
                 <br>
                 <select class="form-control" id="sel1" name="sel_one">
-
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -82,7 +72,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
             </div>
-
             <div class="form-group">
                 <label for="question_two">
                     <h3>
@@ -93,7 +82,6 @@
                 <p1>You enjoy watching your favorite sports team on television.</p1>
                 <br>
                 <select class="form-control" id="sel2" name="sel_two">
-
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -101,7 +89,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
             </div>
-
             <div class="form-group">
                 <label for="question_three">
                     <h3>
@@ -112,7 +99,6 @@
                 <p1>You enjoy going to the movie theater even though netflix is cheaper.</p1>
                 <br>
                 <select class="form-control" id="sel3" name="sel_three">
-
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -120,7 +106,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
             </div>
-
             <div class="form-group">
                 <label for="question_four">
                     <h3>
@@ -131,7 +116,6 @@
                 <p1>When you hear music you can't help but dance.</p1>
                 <br>
                 <select class="form-control" id="sel4" name="sel_four">
-
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -139,7 +123,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
             </div>
-
             <div class="form-group">
                 <label for="question_five">
                     <h3>
@@ -150,7 +133,6 @@
                 <p1>You have done things that would be considered adventurous.</p1>
                 <br>
                 <select class="form-control" id="sel5" name="sel_five">
-
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -158,7 +140,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
             </div>
-
             <div class="form-group">
                 <label for="question_six">
                     <h3>
@@ -169,7 +150,6 @@
                 <p1>You enjoy spending an evening playing games and hanging with friends.</p1>
                 <br>
                 <select class="form-control" id="sel6" name="sel_six">
-
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -177,7 +157,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
             </div>
-
             <div class="form-group">
                 <label for="question_seven">
                     <h3>
@@ -196,7 +175,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
             </div>
-
             <div class="form-group">
                 <label for="question_eight">
                     <h3>
@@ -214,7 +192,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
             </div>
-
             <div class="form-group">
                 <label for="question_nine">
                     <h3>
@@ -225,7 +202,6 @@
                 <p1>You sometimes spend hours reading books.</p1>
                 <br>
                 <select class="form-control" id="sel9" name="sel_nine">
-
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -233,7 +209,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
             </div>
-
             <div class="form-group">
                 <label for="question_ten">
                     <h3>
@@ -244,7 +219,6 @@
                 <p1>You are a very laid back person.</p1>
                 <br>
                 <select class="form-control" id="sel10" name="sel_ten">
-
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -255,33 +229,37 @@
             <button type="submit" id="submit" class="btn btn-primary btn-block btn-lg">
                 <span class="glyphicon glyphicon-ok-sign"></span> Submit</button>
             <hr>
-
             <p>
 
+                <!-- links to friends data and github repository -->
                 <a href="/api/friends">API Friends List</a>
                 |
                 <a href="https://github.com/DMWIGGINS/FriendFinder">GitHub Repo</a>
             </p>
-
         </div>
     </div>
 
 </body>
 
-<!-- </html> -->
+</html>
 
+<!-- javascript to grab data from survey when submit button is clicked -->
 <script type="text/javascript">
     $("#submit").on("click", function (event) {
         event.preventDefault();
         alert("clicked");
 
+        // collects responses from 10 questions and adds them to our scoreArray
         var scoreArray = [];
         for (i = 1; i < 11; i++) {
             var collectScores = $("#sel" + i).val().trim();
             scoreArray.push(collectScores);
         };
+
+        // convert scoreArray to a string so it is compatable to be used with our jQuery $..post
         var scoreString = scoreArray.toString();
 
+        // creating our newFriends object with the form and survey data
         var newFriends = {
             name: $("#name").val().trim(),
             photo: $("#photo").val().trim(),
@@ -291,13 +269,16 @@
         console.log(newFriends.scores);
         console.log(newFriends);
 
-
+        // sending our newFriends object as a request to find best match in friends api
+        // will return result via data callback
         $.post("/api/friends", newFriends,
             function (data) {
                 console.log(data.name);
                 console.log(data.photo);
+
                 if (data) {
 
+                    // show result in modal popup by appending name and photo link of best match to modal id
                     $("#newFriendName").append(data.name);
                     var friendPhoto = $("<img>")
                     $(friendPhoto).attr("src", data.photo);
@@ -305,6 +286,8 @@
                     $('#myModal').modal("show");
 
                 } else {
+
+                    // if something goes wrong and returns no data then show this message
                     alert("Sorry you have no match.....try again.");
                 }
             });

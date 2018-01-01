@@ -279,10 +279,10 @@
                 if (data) {
 
                     // show result in modal popup by appending name and photo link of best match to modal id
-                    $("#newFriendName").append(data.name);
+                    $("#newFriendName").text(data.name);
                     var friendPhoto = $("<img>")
                     $(friendPhoto).attr("src", data.photo);
-                    $("#newFriendImage").append(friendPhoto);
+                    $("#newFriendImage").html(friendPhoto);
                     $('#myModal').modal("show");
 
                 } else {
@@ -290,6 +290,13 @@
                     // if something goes wrong and returns no data then show this message
                     alert("Sorry you have no match.....try again.");
                 }
+                // clearing values from survey after submitted
+                for (i = 1; i < 11; i++) {
+                    $("#sel" + i).val("");
+                }
+                $("#name").val("");
+                $("#photo").val("");
+
             });
 
     });

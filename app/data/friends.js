@@ -1,7 +1,7 @@
 // friends data
 var friends = [{
         "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://asda.scene7.com/is/image/Asda/0064442201982?hei=200&wid=200&resmode=sharp&op_usm=1.1,0.5,0,0",
         "scores": [
             "5",
             "1",
@@ -17,7 +17,7 @@ var friends = [{
     },
     {
         "name": "Shrek",
-        "photo": "https://pmcvariety.files.wordpress.com/2013/06/shrek2.jpg?w=1000&h=563&crop=1",
+        "photo": "https://pmcvariety.files.wordpress.com/2013/06/shrek2.jpg?w=450&h=300&crop=1",
         "scores": [
             "5",
             "1",
@@ -33,7 +33,7 @@ var friends = [{
     },
     {
         "name": "Gru",
-        "photo": "https://vignette.wikia.nocookie.net/mycun-the-movie/images/b/bf/Gru_in_the_bank_of_evil.jpg/revision/latest/scale-to-width-down/640?cb=20151223172313",
+        "photo": "https://vignette.wikia.nocookie.net/mycun-the-movie/images/b/bf/Gru_in_the_bank_of_evil.jpg/revision/latest/scale-to-width-down/320?cb=20151223172313",
         "scores": [
             "5",
             "1",

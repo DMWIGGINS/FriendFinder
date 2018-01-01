@@ -6,5 +6,9 @@ Welcome to the **FriendFinder** application!
 
 We will find the friend who has responses closest to the users and reveal their name and photo.
 
-You can view [FriendFinder](https://afternoon-woodland-55188.herokuapp.com/) on heroku. 
+You can view [FriendFinder](https://afternoon-woodland-55188.herokuapp.com/) on heroku.
+
+Here's a preview of the home page....
+
+[Home Page](https://www.screencast.com/t/2RpfixO2C4)
 

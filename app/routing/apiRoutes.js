@@ -23,6 +23,12 @@ module.exports = function (app) {
         // the total difference between scores will be stored in our bestMatch array
         var bestMatch = [];
         for (x = 0; x < friends.length; x++) {
+
+            // test to see if friends[x].scores is an array, if not than convert to array
+            if (!Array.isArray(friends[x].scores)) {
+                friends[x].scores = friends[x].scores.split(",");
+            }
+            console.log(friends[x].scores)
             var total = 0;
             for (i = 0; i < 10; i++) {
                 console.log(total);
@@ -50,4 +56,5 @@ module.exports = function (app) {
         // we add the current user data to our friends array 
         friends.push(req.body);
     });
+    bestFriend = "";
 };

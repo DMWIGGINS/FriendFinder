@@ -52,3 +52,5 @@ var friends = [{
 
 // make friends data available for use from other parts of the program
 module.exports = friends;
+
+

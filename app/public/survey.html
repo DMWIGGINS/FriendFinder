@@ -50,7 +50,7 @@
             </div>
             <div class="form-group">
                 <p1>Link to Photo Image (Required)</p1>
-                <input type="text" class="form-control" id="photo">
+                <input type="url" class="form-control" id="photo">
             </div>
             <hr>
 
@@ -65,6 +65,7 @@
                 <p1>You lead a very active lifestyle.</p1>
                 <br>
                 <select class="form-control" id="sel1" name="sel_one">
+                    <option value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -82,6 +83,7 @@
                 <p1>You enjoy watching your favorite sports team on television.</p1>
                 <br>
                 <select class="form-control" id="sel2" name="sel_two">
+                    <option value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -99,6 +101,7 @@
                 <p1>You enjoy going to the movie theater even though netflix is cheaper.</p1>
                 <br>
                 <select class="form-control" id="sel3" name="sel_three">
+                    <option value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -116,6 +119,7 @@
                 <p1>When you hear music you can't help but dance.</p1>
                 <br>
                 <select class="form-control" id="sel4" name="sel_four">
+                    <option value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -133,6 +137,7 @@
                 <p1>You have done things that would be considered adventurous.</p1>
                 <br>
                 <select class="form-control" id="sel5" name="sel_five">
+                    <option value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -150,6 +155,7 @@
                 <p1>You enjoy spending an evening playing games and hanging with friends.</p1>
                 <br>
                 <select class="form-control" id="sel6" name="sel_six">
+                    <option value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -167,7 +173,7 @@
                 <p1>You sometimes find yourself pondering the meaning of it all.</p1>
                 <br>
                 <select class="form-control" id="sel7" name="sel_seven">
-
+                    <option value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -185,6 +191,7 @@
                 <p1>You love animals, especially your pets.</p1>
                 <br>
                 <select class="form-control" id="sel8" name="sel_eight">
+                    <option value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -202,6 +209,7 @@
                 <p1>You sometimes spend hours reading books.</p1>
                 <br>
                 <select class="form-control" id="sel9" name="sel_nine">
+                    <option value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -219,6 +227,7 @@
                 <p1>You are a very laid back person.</p1>
                 <br>
                 <select class="form-control" id="sel10" name="sel_ten">
+                    <option value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -247,8 +256,7 @@
 <script type="text/javascript">
     $("#submit").on("click", function (event) {
         event.preventDefault();
-        alert("clicked");
-
+       
         // collects responses from 10 questions and adds them to our scoreArray
         var scoreArray = [];
         for (i = 1; i < 11; i++) {
